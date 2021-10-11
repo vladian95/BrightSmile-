@@ -127,6 +127,23 @@
 
 .about-product__boxBottom{
     padding-top: 15px;
+    form{
+        span{
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 500;
+            color: #727272;
+            margin-right: 15px;
+        }
+        input{
+            border-radius: 10px;
+        }
+        .main__btn{
+            font-size: 18px;
+            font-weight: 600;
+            
+        }
+    }
 }
 .discount__box{
     display: flex;
