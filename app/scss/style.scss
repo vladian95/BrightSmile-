@@ -70,8 +70,106 @@
         color: #181A19;
     }
 }
+.about-product__right{
+    max-width: 568px;
+}
+.about-product__boxTop{
+    width: 100%;
+    border-bottom: 1px solid #DCDCDC;
+}
+.boxTop__title{
+    font-size: 33px;
+    line-height: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+.boxTop__title-text,
+.delivery-box{
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+}
+.boxTop__title-text{
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+}
+.rate__wrapper{
+    li{
+        display: inline-block;
+        padding: 0px 15px;
+        border-right: 1px solid #727272;
+        &:last-child{
+            border: none;
+        }
+        a{
+            color: #727272;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 500;
+        }
+    }
+}
+.delivery-box{
+    padding-left: 30px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 22px;
+        height: 23px;
+        background-image: url(../images/deliveryImg.svg);
+    }
+}
 
-
-
-
-
+.about-product__boxBottom{
+    padding-top: 15px;
+}
+.discount__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 250px;
+    .old-price{
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 500;
+        color: #727272;
+        padding-left: 8px;
+        position: relative;
+        &::before{
+            content: '';
+            width: 67px;
+            height: 2px;
+            background-color: #FF0000;
+            left: 0;
+            top: 15px;
+            position: absolute;
+        }
+    }
+    .percentages{
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        background-color: #FF6B00;
+        position: relative;
+        span{
+            position: absolute;
+            color: #fff;
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 600;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+.actual-price{
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 700;
+}
