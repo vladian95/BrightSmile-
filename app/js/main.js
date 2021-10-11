@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
     "use strict";
 
-    let deadline = '2021-10-12';
+    let deadline = '2021-10-14';
     
     const timer = (id, deadline) => {
 

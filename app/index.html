@@ -76,7 +76,16 @@
           
           </div>
         </div>
-      </section>
+    </section>
+
+    <!-- number -->
+    <div class="row">
+        <div class="number">
+            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+            <input type="number" min="0" value="1" readonly>
+            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+        </div>
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
