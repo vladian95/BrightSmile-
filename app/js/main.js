@@ -1,3 +1,22 @@
+$('.slider-box__top').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows: false,
+    centerMode: true,
+    asNavFor: '.slider-box__bottom'
+  });
+  $('.slider-box__bottom').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    asNavFor: '.slider-box__top',
+    centerMode: true,
+    
+  });
+    
+
+
 const ratingItemsList = document.querySelectorAll('.rating__item');
 const ratingItemsArray = Array.prototype.slice.call(ratingItemsList);
 
@@ -7,9 +26,6 @@ ratingItemsArray.forEach(item =>
         item.parentNode.dataset.totalValue = itemValue;
     })
 );
-
-
-
 
 window.addEventListener('DOMContentLoaded', () => {
     "use strict";
@@ -69,4 +85,7 @@ window.addEventListener('DOMContentLoaded', () => {
     };
     
     timer('.container1', deadline);
+
+    
 });
+

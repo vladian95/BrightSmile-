@@ -14,62 +14,65 @@
     color: #565860;
     text-transform: uppercase;
 }
-.instruction__title {
-    text-align: center;
-    font-size: 30px;
-    line-height: 38px;
-    font-weight: 500;
-    text-transform: uppercase;
-    span {
-        font-weight: 700;
-    }
-}
-.instruction__inner {
+
+.about-product__inner{
     display: flex;
-    max-height: 572px;
+    justify-content: space-around;
+    padding-top: 35px;
 }
-.left__content {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.right__content {
-    width: 100%;
-    padding-top: 56px;
-}
-.instruction__item {
-    display: flex;
-    align-items: center;
-    padding: 4px 42px 6px 91px;
-    background-color: #fff;
-    max-width: 461px;
-    border-top-right-radius: 241px;
-    border-bottom-right-radius: 241px;
-    position: relative;
-    margin-bottom: 42px;
-    &-avatar {
-        height: 115px;
-        width: 115px;
-        border-radius: 50%;
-        border: solid 4px #923da0;
-        position: absolute;
-        top: -11px;
-        left: -56px;
+.slider__inner{
+    max-width: 612px;
+    .slider__item-woman{
+        position: relative;
+        .text-box{
+            max-width: 339px;
+            position: absolute;
+            left: 0;
+            bottom: 21px;
+            &__item{
+                width: 100%;
+                background-color: #923DA0;
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: 700;
+                color: #fff;
+                text-transform: uppercase;
+                padding: 15px 37px 13px 69px;
+                margin-bottom: 13px;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 26px;
+                    top: 15px;
+                    width: 22px;
+                    height: 16px;
+                    background-image: url(../images/slider-img/checkIcon.png);
+                }
+            }
+        }
     }
-    span {
-        font-size: 49px;
-        line-height: 60px;
-        font-weight: 700;
-        color: #923da0;
-        margin-right: 16px;
-    }
-    p {
-        font-size: 17px;
-        line-height: 22px;
-        font-weight: 500;
-        color: #181a19;
+    .slider__item-beforeAfter{
+        color: #fff;
+        .beforeAfter-text__box{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #923DA0;
+            padding: 15px 0px;
+            .beforeAfter-text__item{
+                font-size: 14px;
+                line-height: 17px;
+                font-weight: 700;
+                text-transform: uppercase;  
+            }
+        }
     }
 }
+
+
+
+
 .about-product__right {
     max-width: 568px;
 }
@@ -329,5 +332,62 @@
         font-size: 12px;
         line-height: 14px;
         font-weight: 400;
+    }
+}
+
+.instruction__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 500;
+    text-transform: uppercase;
+    span {
+        font-weight: 700;
+    }
+}
+.instruction__inner {
+    display: flex;
+    max-height: 572px;
+}
+.left__content {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.right__content {
+    width: 100%;
+    padding-top: 56px;
+}
+.instruction__item {
+    display: flex;
+    align-items: center;
+    padding: 4px 42px 6px 91px;
+    background-color: #fff;
+    max-width: 461px;
+    border-top-right-radius: 241px;
+    border-bottom-right-radius: 241px;
+    position: relative;
+    margin-bottom: 42px;
+    &-avatar {
+        height: 115px;
+        width: 115px;
+        border-radius: 50%;
+        border: solid 4px #923da0;
+        position: absolute;
+        top: -11px;
+        left: -56px;
+    }
+    span {
+        font-size: 49px;
+        line-height: 60px;
+        font-weight: 700;
+        color: #923da0;
+        margin-right: 16px;
+    }
+    p {
+        font-size: 17px;
+        line-height: 22px;
+        font-weight: 500;
+        color: #181a19;
     }
 }
