@@ -1,6 +1,7 @@
 @import "vars";
 @import "global";
 @import "fonts";
+@import "media";
 
 .header {
     background-color: #f1ddf4;
@@ -153,6 +154,9 @@
 
 .about-product__boxBottom {
     padding-top: 15px;
+    .adaptive-timer__inner{
+        display: none;
+    }
     form {
         margin-top: 20px;
         .input__box{
@@ -245,6 +249,12 @@
     justify-content: space-between;
     align-items: center;
 }
+.adaptive-timer__inner{
+    display: none;
+}
+.boxBottom__price-adaptive{
+    display: none;
+}
 .discount__box {
     display: flex;
     justify-content: space-between;
@@ -309,6 +319,7 @@
         }
     }
 }
+
 //-TIMER
 .container1 {
     display: flex;
@@ -334,13 +345,16 @@
         font-weight: 400;
     }
 }
-
+.container__btn{
+    display: none;
+}
 .instruction__title {
     text-align: center;
     font-size: 30px;
     line-height: 38px;
     font-weight: 500;
     text-transform: uppercase;
+    padding: 0px 10px;
     span {
         font-weight: 700;
     }
@@ -357,6 +371,7 @@
 .right__content {
     width: 100%;
     padding-top: 56px;
+    padding-left: 70px;
 }
 .instruction__item {
     display: flex;
