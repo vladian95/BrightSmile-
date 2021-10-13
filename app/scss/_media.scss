@@ -1,53 +1,54 @@
-@media (max-width: 1314px){
-    .about-product{
-        .about-product__inner{
+@media (max-width: 1314px) {
+    .about-product {
+        .about-product__inner {
             display: block;
-            .about-product__right{
+            // .slider__inner {
+            // }
+            .about-product__right {
                 text-align: center;
                 max-width: 100%;
-                .delivery-box{        
-                    &::before{
+                .delivery-box {
+                    &::before {
                         left: 37%;
                         top: 0;
                     }
                 }
-                .boxBottom-time__inner{
-
+                .boxBottom-time__inner {
                     justify-content: space-around;
                 }
-                form{
+                form {
                     text-align: center;
-                    .input__box{
+                    .input__box {
                         max-width: 290px;
                         margin: 0 auto;
                         margin-bottom: 20px;
                     }
-                    .main__btn{
+                    .main__btn {
                         margin: 0 auto;
                     }
                 }
             }
         }
     }
-    .instruction{
-        .instruction__inner{
+    .instruction {
+        .instruction__inner {
             display: block;
-            .left__content{
+            .left__content {
                 text-align: center;
             }
-            .right__content{
+            .right__content {
                 padding-bottom: 10px;
                 text-align: -webkit-center;
             }
         }
     }
 }
-@media (max-width: 900px){
-    .about-product{
-        .about-product__inner{
-            .about-product__right{
-                .delivery-box{        
-                    &::before{
+@media (max-width: 900px) {
+    .about-product {
+        .about-product__inner {
+            .about-product__right {
+                .delivery-box {
+                    &::before {
                         left: 32%;
                         top: 0;
                     }
@@ -55,31 +56,30 @@
             }
         }
     }
-    
 }
-@media (max-width: 830px){
-    body{
-        .header{
+@media (max-width: 830px) {
+    body {
+        .header {
             background-color: #fff;
         }
     }
-    .instruction{
-        .instruction__inner{
-            .left__content{
-                img{
+    .instruction {
+        .instruction__inner {
+            .left__content {
+                img {
                     width: 100%;
                 }
             }
-            .right__content{
+            .right__content {
                 padding-bottom: 10px;
                 text-align: start;
-                .instruction__item{
+                .instruction__item {
                     max-width: 100%;
                     border-radius: 0%;
                     margin-bottom: 40px;
                     margin-left: 75px;
                     height: 92px;
-                    .instruction__item-avatar{
+                    .instruction__item-avatar {
                         top: -13px;
                     }
                 }
@@ -87,16 +87,16 @@
         }
     }
 }
-@media (max-width: 680px){
-    .about-product{
-        .about-product__inner{
-            .about-product__right{
+@media (max-width: 680px) {
+    .about-product {
+        .about-product__inner {
+            .about-product__right {
                 text-align: start;
-                .boxBottom__price-adaptive{
+                .boxBottom__price-adaptive {
                     display: flex;
                     align-items: center;
-                    div{
-                        & + div{
+                    div {
+                        & + div {
                             margin-left: 20px;
                         }
                     }
@@ -134,91 +134,108 @@
                             transform: translate(-50%, -50%);
                         }
                     }
-.actual-price { 
-font-size: 48px;
-                line-height: 58px;
-                font-weight: 700;
-            }
-        }
-        .boxBottom__price{
-            display: none;
-        }
-        .delivery-box{        
-            &::before{
-                left: 0;
-                top: 0;
-            }
-        }
-        .main__btn{
-            display: none;
-        }
-        
-        .about-product__boxBottom{
-            .boxBottom-time__inner{
-                display: block;
-            }
-            .boxBottom__date{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
-            }
-            .adaptive-timer__inner{
-                display: block;
-                .input__box{
-                    display: block;
-                    .input__box-text{
-                        font-size: 18px;
-                        line-height: 22px;
-                        font-weight: 500;
-                        color: #727272;
-                        margin-bottom: 13px;
+                    .actual-price {
+                        font-size: 48px;
+                        line-height: 58px;
+                        font-weight: 700;
                     }
                 }
-                //INPUT NUMBER
-                .number {
-                    display: inline-block;
-                    position: relative;
-                    width: 112px;
-                }
-                .number input[type="number"] {
-                    display: block;
-                    height: 37px;
-                    line-height: 32px;
-                    width: 100%;
-                    padding: 0;
-                    margin: 0;
-                    color: #565860;
-                    border-radius: 29px;
-                    border: solid 1px #c4c4c4;
-                    box-sizing: border-box;
-                    text-align: center;
-                    -moz-appearance: textfield;
-                    -webkit-appearance: textfield;
-                    appearance: textfield;
-                }
-                .number input[type="number"]::-webkit-outer-spin-button,
-                .number input[type="number"]::-webkit-inner-spin-button {
+                .boxBottom__price {
                     display: none;
                 }
-                .about-product__boxBottom{
-                    .boxBottom-time__inner{
-                        display: block;
-                        .boxBottom__price-adaptive{
-                            flex-wrap: wrap;
-                        }
+                .delivery-box {
+                    &::before {
+                        left: 0;
+                        top: 0;
                     }
-                    .boxBottom__date{
+                }
+                .main__btn {
+                    display: none;
+                }
+
+                .about-product__boxBottom {
+                    .boxBottom-time__inner {
+                        display: block;
+                    }
+                    .boxBottom__date {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
                         flex-wrap: wrap;
                     }
-                    .adaptive-timer__inner{
+                    .adaptive-timer__inner {
                         display: block;
-                        .input__box{
+                        .input__box {
                             display: block;
-                            .input__box-text{
+                            //INPUT NUMBER
+                            .number {
+                                display: inline-block;
+                                position: relative;
+                                width: 112px;
+                            }
+                            .number input[type="number"] {
+                                display: block;
+                                height: 37px;
+                                line-height: 32px;
+                                width: 100%;
+                                padding: 0;
+                                margin: 0;
+                                color: #565860;
+                                border-radius: 29px;
+                                border: solid 1px #c4c4c4;
+                                box-sizing: border-box;
+                                text-align: center;
+                                -moz-appearance: textfield;
+                                -webkit-appearance: textfield;
+                                appearance: textfield;
+                            }
+                            .number input[type="number"]::-webkit-outer-spin-button,
+                            .number input[type="number"]::-webkit-inner-spin-button {
+                                display: none;
+                            }
+                            .number-minus {
+                                position: absolute;
+                                top: 1px;
+                                left: 1px;
+                                bottom: 1px;
+                                width: 40px;
+                                border-top-left-radius: 29px;
+                                border-bottom-left-radius: 29px;
+                                padding: 0;
+                                display: block;
+                                text-align: center;
+                                border: none;
+                                border-right: 1px solid #ddd;
+                                color: #565860;
+                                cursor: pointer;
+                                &:hover {
+                                    background-color: #923da0;
+                                    transition: 0.5s;
+                                    color: #fff;
+                                }
+                            }
+                            .number-plus {
+                                position: absolute;
+                                top: 1px;
+                                right: 1px;
+                                bottom: 1px;
+                                width: 40px;
+                                border-top-right-radius: 29px;
+                                border-bottom-right-radius: 29px;
+                                padding: 0;
+                                display: block;
+                                text-align: center;
+                                border: none;
+                                border-left: 1px solid #ddd;
+                                color: #565860;
+                                cursor: pointer;
+                                &:hover {
+                                    background-color: #923da0;
+                                    transition: 0.5s;
+                                    color: #fff;
+                                }
+                            }
+                            .input__box-text {
                                 font-size: 18px;
                                 line-height: 22px;
                                 font-weight: 500;
@@ -226,103 +243,57 @@ font-size: 48px;
                                 margin-bottom: 13px;
                             }
                         }
-                        //INPUT NUMBER
-                        .number {
-                            display: inline-block;
-                            position: relative;
-                            width: 112px;
-                        }
-                        .number input[type="number"] {
-                            display: block;
-                            height: 37px;
-                            line-height: 32px;
-                            width: 100%;
-                            padding: 0;
-                            margin: 0;
-                            color: #565860;
-                            border-radius: 29px;
-                            border: solid 1px #c4c4c4;
-                            box-sizing: border-box;
-                            text-align: center;
-                            -moz-appearance: textfield;
-                            -webkit-appearance: textfield;
-                            appearance: textfield;
-                        }
-                        .number input[type="number"]::-webkit-outer-spin-button,
-                        .number input[type="number"]::-webkit-inner-spin-button {
-                            display: none;
-                        }
-                        .number-minus {
-                            position: absolute;
-                            top: 1px;
-                            left: 1px;
-                            bottom: 1px;
-                            width: 40px;
-                            border-top-left-radius: 29px;
-                            border-bottom-left-radius: 29px;
-                            padding: 0;
-                            display: block;
-                            text-align: center;
-                            border: none;
-                            border-right: 1px solid #ddd;
-                            color: #565860;
-                        }
-                        .number-plus {
-                            position: absolute;
-                            top: 1px;
-                            right: 1px;
-                            bottom: 1px;
-                            width: 40px;
-                            border-top-right-radius: 29px;
-                            border-bottom-right-radius: 29px;
-                            padding: 0;
-                            display: block;
-                            text-align: center;
-                            border: none;
-                            border-left: 1px solid #ddd;
-                            color: #565860;
+                        .about-product__boxBottom {
+                            .boxBottom-time__inner {
+                                display: block;
+                                .boxBottom__price-adaptive {
+                                    flex-wrap: wrap;
+                                }
+                            }
+                            .boxBottom__date {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                flex-wrap: wrap;
+                            }
+                            .adaptive-timer__inner {
+                                display: block;
+                                .input__box {
+                                    display: block;
+                                    .input__box-text {
+                                        font-size: 18px;
+                                        line-height: 22px;
+                                        font-weight: 500;
+                                        color: #727272;
+                                        margin-bottom: 13px;
+                                    }
+                                }
+                            }
+                            form {
+                                display: none;
+                            }
                         }
                     }
-                    form{
+                    form {
                         display: none;
                     }
                 }
-                .number-plus {
-                    position: absolute;
-                    top: 1px;
-                    right: 1px;
-                    bottom: 1px;
-                    width: 40px;
-                    border-top-right-radius: 29px;
-                    border-bottom-right-radius: 29px;
-                    padding: 0;
-                    display: block;
-                    text-align: center;
-                    border: none;
-                    border-left: 1px solid #ddd;
-                    color: #565860;
-                }
-            }
-            form{
-                display: none;
-            }
-         }
             }
         }
-        .container__btn{
+        .container__btn {
             display: block;
-            background-color: #FF6B00;
+            background-color: #ff6b00;
             margin-top: 42px;
-            .adaptive-btn__wrapper{
-                width: 100%;;
+            .adaptive-btn__wrapper {
+                width: 100%;
                 padding: 0px 15px;
                 margin: 0 auto;
-                .main-btn__adaptive{
+                .main-btn__adaptive {
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
                     width: 100%;
-                    background-color: #FF6B00;
+                    background-color: #ff6b00;
                     border: none;
                     font-size: 18px;
                     line-height: 18px;
@@ -331,87 +302,86 @@ font-size: 48px;
                     text-transform: uppercase;
                     padding: 18px 0px;
 
-                    .adaptive-actual__price{
+                    .adaptive-actual__price {
                         font-size: 33px;
                         line-height: 40px;
                         font-weight: 700;
                     }
-                    .adaptive-old__price{
+                    .adaptive-old__price {
                         font-size: 24px;
                         line-height: 30px;
                         font-weight: 500;
-                        color: #4A1414;
+                        color: #4a1414;
                         position: relative;
-                        &::before{
-                            content: '';
+                        &::before {
+                            content: "";
                             position: absolute;
                             width: 67px;
                             height: 2px;
-                            background-color: #4A1414;
+                            background-color: #4a1414;
                             left: -8px;
                             top: 15px;
                         }
                     }
                 }
-            } 
+            }
         }
-        
-    }  
+    }
 }
-@media (max-width: 509px){
-    .instruction{
-        .instruction__title{
+@media (max-width: 509px) {
+    .instruction {
+        .instruction__title {
             font-size: 21px;
             line-height: 24px;
             margin-bottom: 7px;
         }
-        .instruction__inner{
-            .right__content{
+        .instruction__inner {
+            .right__content {
                 padding-bottom: 10px;
-                .instruction__item{
+                .instruction__item {
                     padding: 4px 10px 6px 71px;
-                    .instruction__item-avatar{
+                    .instruction__item-avatar {
                         top: -13px;
                     }
                 }
             }
         }
     }
-    .about-product__boxTop{
-        .boxTop__title{
+    .about-product__boxTop {
+        .boxTop__title {
             font-size: 23px;
         }
-        .boxTop__title-text{
+        .boxTop__title-text {
             margin: 3px 0px 8px;
         }
-    }  
+    }
 }
-@media (max-width: 437px){
-    .container__btn{
-        .adaptive-btn__wrapper{
-            .main-btn__adaptive{
+@media (max-width: 437px) {
+    .container__btn {
+        .adaptive-btn__wrapper {
+            .main-btn__adaptive {
                 .adaptive-actual__price,
-                .adaptive-old__price{
+                .adaptive-old__price {
                     display: none;
                 }
             }
         }
     }
 }
-@media (max-width: 404px){
-    body{
-        .header{
-            .header__title{
+@media (max-width: 404px) {
+    body {
+        .header {
+            .header__title {
                 font-size: 23px;
             }
         }
     }
-    .instruction{
-        .instruction__inner{
-            .right__content{
+    .instruction {
+        .instruction__inner {
+            .right__content {
                 padding-bottom: 5px;
-                .instruction__item{
-                    p{
+                .instruction__item {
+                    p {
                         font-size: 13px;
                         line-height: 16px;
                     }
@@ -419,19 +389,19 @@ font-size: 48px;
             }
         }
     }
-    .about-product__boxTop{
-        .rate__wrapper{
-            li{
+    .about-product__boxTop {
+        .rate__wrapper {
+            li {
                 display: block;
                 padding: 0;
                 margin-bottom: 10px;
                 border: none;
             }
-        } 
+        }
     }
-    .boxBottom__date{
-        .adaptive-timer__inner{
+    .boxBottom__date {
+        .adaptive-timer__inner {
             margin: 10px 0px 10px;
         }
-    } 
+    }
 }
