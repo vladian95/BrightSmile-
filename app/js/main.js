@@ -13,23 +13,12 @@ $('.slider-box__top').slick({
     asNavFor: '.slider-box__top',
     centerMode: true,
     
-});
-    
-
-
-const ratingItemsList = document.querySelectorAll('.rating__item');
-const ratingItemsArray = Array.prototype.slice.call(ratingItemsList);
-
-ratingItemsArray.forEach(item => 
-    item.addEventListener('click', () => {
-        const { itemValue } = item.dataset;
-        item.parentNode.dataset.totalValue = itemValue;
-    })
-);
+  });
 
 window.addEventListener('DOMContentLoaded', () => {
     "use strict";
 
+    //Timer
     let deadline = '2021-10-14';
     
     const timer = (id, deadline) => {
@@ -86,6 +75,17 @@ window.addEventListener('DOMContentLoaded', () => {
     
     timer('.container1', deadline);
 
+
+    //Rating
+    const ratingItemsList = document.querySelectorAll('.rating__item');
+    const ratingItemsArray = Array.prototype.slice.call(ratingItemsList);
+
+    ratingItemsArray.forEach(item => 
+        item.addEventListener('click', () => {
+            const { itemValue } = item.dataset;
+            item.parentNode.dataset.totalValue = itemValue;
+    })
+);
     
 });
 
