@@ -78,7 +78,7 @@ $('.slider-box__top').slick({
     fade: true,
     arrows: false,
     centerMode: true,
-    asNavFor: '.slider-box__bottom'
+    asNavFor: '.slider-box__bottom',
   });
 $('.slider-box__bottom').slick({
     slidesToShow: 3,
