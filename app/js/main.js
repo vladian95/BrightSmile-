@@ -1,6 +1,24 @@
+$('.slider-box__top').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows: false,
+    centerMode: true,
+    asNavFor: '.slider-box__bottom'
+  });
+  $('.slider-box__bottom').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    asNavFor: '.slider-box__top',
+    centerMode: true,
+    
+  });
+
 window.addEventListener('DOMContentLoaded', () => {
     "use strict";
 
+    //Timer
     let deadline = '2021-10-14';
     
     const timer = (id, deadline) => {
@@ -56,4 +74,18 @@ window.addEventListener('DOMContentLoaded', () => {
     };
     
     timer('.container1', deadline);
+
+
+    //Rating
+    const ratingItemsList = document.querySelectorAll('.rating__item');
+    const ratingItemsArray = Array.prototype.slice.call(ratingItemsList);
+
+    ratingItemsArray.forEach(item => 
+        item.addEventListener('click', () => {
+            const { itemValue } = item.dataset;
+            item.parentNode.dataset.totalValue = itemValue;
+    })
+);
+    
 });
+
