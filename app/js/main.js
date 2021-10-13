@@ -78,13 +78,13 @@ $('.slider-box__top').slick({
     fade: true,
     arrows: false,
     centerMode: true,
-    asNavFor: '.slider-box__bottom'
+    asNavFor: '.slider-box__bottom',
   });
 $('.slider-box__bottom').slick({
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    variableWidth: true,
     arrows: true,
+    useCSS: true,
     asNavFor: '.slider-box__top',
-    centerMode: true,
-    
   });

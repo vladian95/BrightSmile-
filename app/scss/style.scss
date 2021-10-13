@@ -20,6 +20,7 @@
     display: flex;
     justify-content: space-around;
     padding-top: 35px;
+    align-items: center;
 }
 .slider__inner{
     max-width: 612px;
@@ -411,4 +412,123 @@
                 }
             }
 
+//-TIMER
+.container1 {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    .colon{
+        position: absolute;
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+    .colon1{
+        top: 4px;
+        left: 88px;
+    }
+    .colon2{
+        top: 4px;
+        left: 168px;
+    }
+}
+.numbers1 {
+    width: 60px;
+    height: 55px;
+    background: #ffd600;
+    border-radius: 0px;
+    margin-left: 20px;
+    text-align: center;
+    color: #131414;
+    padding: 4px 0px 8px;
+    span {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    .description1 {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+    }
+}
+.container__btn{
+    display: none;
+}
+.instruction__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    span {
+        font-weight: 700;
+    }
+}
+.instruction__inner {
+    display: flex;
+    max-height: 572px;
+}
+.left__content {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.right__content {
+    width: 100%;
+    padding-top: 56px;
+}
+.instruction__item {
+    display: flex;
+    align-items: center;
+    padding: 4px 42px 6px 91px;
+    background-color: #fff;
+    max-width: 461px;
+    border-top-right-radius: 241px;
+    border-bottom-right-radius: 241px;
+    position: relative;
+    margin-bottom: 42px;
+    &-avatar {
+        height: 115px;
+        width: 115px;
+        border-radius: 50%;
+        border: solid 4px #923da0;
+        position: absolute;
+        top: -11px;
+        left: -56px;
+    }
+    span {
+        font-size: 49px;
+        line-height: 60px;
+        font-weight: 700;
+        color: #923da0;
+        margin-right: 16px;
+    }
+    p {
+        font-size: 17px;
+        line-height: 22px;
+        font-weight: 500;
+        color: #181a19;
+    }
+}
 
+//SLIDER
+.slider-box__bottom {
+    width: 215px;
+    text-align: center;
+    margin: 0 auto;
+}
+.slider-bottom__item{
+    margin-left: 10px;
+}
+
+.slick-slide.slick-current.slick-active img{
+    border: 2px solid #923DA0;
+}
+
+.slider__item.slider__item-woman img.slider-main,
+.slider__item.slider__item-beforeAfter img.slider-main,
+img.slider-main {
+    border: none !important;
+}
