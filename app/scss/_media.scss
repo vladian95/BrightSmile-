@@ -306,6 +306,26 @@
             }
         }
     }
+    .about-product__boxTop{
+        .boxTop__title{
+            font-size: 23px;
+        }
+        .boxTop__title-text{
+            margin: 3px 0px 8px;
+        }
+    }  
+}
+@media (max-width: 437px){
+    .container__btn{
+        .adaptive-btn__wrapper{
+            .main-btn__adaptive{
+                .adaptive-actual__price,
+                .adaptive-old__price{
+                    display: none;
+                }
+            }
+        }
+    }
 }
 @media (max-width: 404px){
     body{
@@ -328,4 +348,22 @@
             }
         }
     }
+    .about-product__boxTop{
+        .rate__wrapper{
+            li{
+                display: block;
+                padding: 0;
+                margin-bottom: 10px;
+                border: none;
+            }
+        }
+        .boxBottom__price-adaptive{
+            flex-wrap: wrap;
+        } 
+    }
+    .boxBottom__date{
+        .adaptive-timer__inner{
+            margin: 10px 0px 10px;
+        }
+    } 
 }
