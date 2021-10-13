@@ -86,5 +86,7 @@ $('.slider-box__bottom').slick({
     variableWidth: true,
     arrows: true,
     useCSS: true,
+    prevArrow: '<button class="slick-arrow slick-prev"><img src="images/slider-img/slide-left.svg" alt="#"></button>',
+    nextArrow: '<button class="slick-arrow slick-next"><img src="images/slider-img/slide-right.svg" alt="#"></button>',
     asNavFor: '.slider-box__top',
   });

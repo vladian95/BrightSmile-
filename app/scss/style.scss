@@ -23,7 +23,7 @@
     align-items: center;
 }
 .slider__inner{
-    max-width: 612px;
+    max-width: 617px;
     .slider__item-woman{
         position: relative;
         .text-box{
@@ -426,11 +426,41 @@
         color: #181a19;
     }
 }
+
+
 .slider-box__bottom {
-    width: 215px;
+    width: 223px;
     text-align: center;
     margin: 0 auto;
+    position: relative;
+    padding-top: 20px;
 }
-.slider-bottom__item{
+.slider-bottom__item {
     margin-left: 10px;
+}
+.slick-arrow{
+    width: 39px;
+    height: 39px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+}
+.slick-prev{
+    top: 32px;
+    left: -46px;
+    img{
+        top: 11px;
+        right: 17px;
+        position: absolute;
+    }
+}
+.slick-next{
+    top: 32px;
+    right: -46px;
+    img{
+        top: 11px;
+        left: 17px;
+        position: absolute;
+    }
 }
