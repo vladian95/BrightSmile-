@@ -81,10 +81,10 @@ $('.slider-box__top').slick({
     asNavFor: '.slider-box__bottom'
   });
 $('.slider-box__bottom').slick({
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    variableWidth: true,
     arrows: true,
     asNavFor: '.slider-box__top',
     centerMode: true,
-    
   });

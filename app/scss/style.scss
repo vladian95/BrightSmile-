@@ -20,6 +20,7 @@
     display: flex;
     justify-content: space-around;
     padding-top: 35px;
+    align-items: center;
 }
 .slider__inner{
     max-width: 612px;
@@ -329,6 +330,21 @@
 .container1 {
     display: flex;
     justify-content: left;
+    position: relative;
+    .colon{
+        position: absolute;
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+    .colon1{
+        top: 4px;
+        left: 88px;
+    }
+    .colon2{
+        top: 4px;
+        left: 168px;
+    }
 }
 .numbers1 {
     width: 60px;
@@ -408,5 +424,18 @@
         line-height: 22px;
         font-weight: 500;
         color: #181a19;
+    }
+}
+
+.slick-list .draggable{
+    width: 600px !important;
+}
+.slick-list{
+    width: 200px !important;
+}
+.slick-initialized .slick-slide{
+    
+    .slider-bottom__item{
+        margin-right: 10px;
     }
 }

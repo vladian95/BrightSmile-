@@ -152,10 +152,12 @@
                 .main__btn{
                     display: none;
                 }
-                
                 .about-product__boxBottom{
                     .boxBottom-time__inner{
                         display: block;
+                        .boxBottom__price-adaptive{
+                            flex-wrap: wrap;
+                        }
                     }
                     .boxBottom__date{
                         display: flex;
@@ -356,9 +358,6 @@
                 margin-bottom: 10px;
                 border: none;
             }
-        }
-        .boxBottom__price-adaptive{
-            flex-wrap: wrap;
         } 
     }
     .boxBottom__date{
