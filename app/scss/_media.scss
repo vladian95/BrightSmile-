@@ -98,6 +98,7 @@
                 .boxBottom__price-adaptive {
                     display: flex;
                     align-items: center;
+                    flex-wrap: wrap;
                     div {
                         & + div {
                             margin-left: 20px;
@@ -250,9 +251,6 @@
                         .about-product__boxBottom {
                             .boxBottom-time__inner {
                                 display: block;
-                                .boxBottom__price-adaptive {
-                                    flex-wrap: wrap;
-                                }
                             }
                             .boxBottom__date {
                                 display: flex;
