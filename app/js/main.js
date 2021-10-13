@@ -13,7 +13,7 @@ $('.slider-box__top').slick({
     asNavFor: '.slider-box__top',
     centerMode: true,
     
-  });
+});
     
 
 
