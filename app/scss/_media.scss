@@ -156,9 +156,14 @@
                     .boxBottom-time__inner{
                         display: block;
                     }
+                    .boxBottom__date{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+                    }
                     .adaptive-timer__inner{
                         display: block;
-                        
                         .input__box{
                             display: flex;
                             align-items: center;
@@ -240,6 +245,7 @@
         .container__btn{
             display: block;
             background-color: #FF6B00;
+            margin-top: 42px;
             .adaptive-btn__wrapper{
                 width: 100%;;
                 padding: 0px 15px;
@@ -257,6 +263,7 @@
                     color: #fff;
                     text-transform: uppercase;
                     padding: 18px 0px;
+
                     .adaptive-actual__price{
                         font-size: 33px;
                         line-height: 40px;
