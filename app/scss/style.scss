@@ -220,6 +220,12 @@
                         border: none;
                         border-right: 1px solid #ddd;
                         color: #565860;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: #923DA0;
+                            transition: 0.5s;
+                            color: #fff;
+                        }
                     }
                     .number-plus {
                         position: absolute;
@@ -235,6 +241,12 @@
                         border: none;
                         border-left: 1px solid #ddd;
                         color: #565860;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: #923DA0;
+                            transition: 0.5s;
+                            color: #fff;
+                        }
                     }
                     //INPUT NUMBER
                     .main__btn {
@@ -247,6 +259,11 @@
                         text-transform: uppercase;
                         margin-top: 38px;
                         border: none;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: #923DA0;
+                            transition: 0.5s;
+                        }
                     }
                 }
             }
