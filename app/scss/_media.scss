@@ -77,6 +77,7 @@
                     max-width: 100%;
                     border-radius: 0%;
                     margin-bottom: 40px;
+                    margin-left: 75px;
                     height: 92px;
                     .instruction__item-avatar{
                         top: -13px;
@@ -165,21 +166,16 @@
                     .adaptive-timer__inner{
                         display: block;
                         .input__box{
-                            display: flex;
-                            align-items: center;
-                        }
-                        span {
-                            font-size: 18px;
-                            line-height: 22px;
-                            font-weight: 500;
-                            color: #727272;
+                            display: block;
+                            .input__box-text{
+                                font-size: 18px;
+                                line-height: 22px;
+                                font-weight: 500;
+                                color: #727272;
+                                margin-bottom: 13px;
+                            }
                         }
                         //INPUT NUMBER
-                        .row {
-                            text-align: center;
-                            width: 200px;
-                            margin-left: -26px;
-                        }
                         .number {
                             display: inline-block;
                             position: relative;
