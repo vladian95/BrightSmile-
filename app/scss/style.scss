@@ -426,16 +426,11 @@
         color: #181a19;
     }
 }
-
-.slick-list .draggable{
-    width: 600px !important;
+.slider-box__bottom {
+    width: 215px;
+    text-align: center;
+    margin: 0 auto;
 }
-.slick-list{
-    width: 200px !important;
-}
-.slick-initialized .slick-slide{
-    
-    .slider-bottom__item{
-        margin-right: 10px;
-    }
+.slider-bottom__item{
+    margin-left: 10px;
 }

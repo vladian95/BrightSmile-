@@ -85,6 +85,6 @@ $('.slider-box__bottom').slick({
     slidesToScroll: 1,
     variableWidth: true,
     arrows: true,
+    useCSS: true,
     asNavFor: '.slider-box__top',
-    centerMode: true,
   });
